@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Genius</title>
+</head>
+
+<body>
+    
+    <div class="grid-container">
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--photo">G <div class="photo-container"></div></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--photo">E <div class="photo-container"></div></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--photo">N <div class="photo-container"></div></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--photo">I <div class="photo-container"></div></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--photo">U <div class="photo-container"></div></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--1"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--photo">S <div class="photo-container"></div></div>
+        <div class="grid-item grid-item--4"></div>
+        <div class="grid-item grid-item--3"></div>
+        <div class="grid-item grid-item--2"></div>
+        <div class="grid-item grid-item--1"></div>
+    </div>
+</body>
+
+<script>
+    const allButtons = document.querySelectorAll('.grid-item');
+
+    const result = document.querySelector('.grid-item');
+
+
+    allButtons.forEach((item, index) => {
+        //defino color
+        const color = "hsl(" + Math.floor(280 - (index * (280 / allButtons.length))) + ", 100%, 50%)";
+
+        //asigno color al item
+        item.style.backgroundColor = color;
+
+    });
+</script>
+
+</html>
